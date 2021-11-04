@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+.greetings {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.background {
+    /* The image used */
+    background-image: url("../images/background.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

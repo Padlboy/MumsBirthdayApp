@@ -2,14 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Electron",
-            "type": "node",
-            "program": "./main.js", // ensure this is path to main.js file
-            "stopOnEntry": false,
-            "args": [], 
-            "cwd": "${workspaceRoot}",
-            // as you have noted, this is also important:
-            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
-        },
+            "name": "Run Electron",
+            "request": "launch",
+            "runtimeArgs": [
+                "start"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        }
     ]
   }
